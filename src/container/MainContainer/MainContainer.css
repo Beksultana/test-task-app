@@ -1,0 +1,27 @@
+.ContactId {
+    margin: 5px 0;
+    box-shadow: 2px 3px 6px #ccc;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.ContactId p {
+   font-size: 18px;
+   font-weight: bold;
+    margin: 0;
+}
+.ContactId:hover {
+    background: #0068b2;
+    color: white;
+    cursor: pointer;
+}
+.ContactsTitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+.ContactDiv {
+    height: 78vh;
+    overflow: scroll;
+}

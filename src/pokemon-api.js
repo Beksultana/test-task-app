@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const pokemonApi = axios.create({
-    baseURL: "https://pokeapi.co/api/v2"
+    baseURL: "http://demo.sibers.com"
 });
 
 export default pokemonApi;

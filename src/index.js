@@ -8,15 +8,15 @@ import {Provider} from "react-redux";
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 
-import pokemonReducer from './store/reducers/pokemonsReducers';
+import users from './store/reducers/usersReducers';
 
 const rootReducer = combineReducers({
-    pokemon: pokemonReducer
+    users: users
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(composeEnhancers(rootReducer,
+const store = composeEnhancers(createStore(rootReducer,
     applyMiddleware(thunkMiddleware))
 );
 
